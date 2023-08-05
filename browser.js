@@ -7,6 +7,7 @@ var safeBuffer = require('safe-buffer')
 var randombytes = require('randombytes')
 var Buffer = safeBuffer.Buffer
 var kBufferMaxLength = safeBuffer.kMaxLength
+var global = global || window
 var crypto = global.crypto || global.msCrypto
 var kMaxUint32 = Math.pow(2, 32) - 1
 function assertOffset (offset, length) {
