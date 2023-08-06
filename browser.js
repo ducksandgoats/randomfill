@@ -5,6 +5,7 @@ function oldBrowser () {
 }
 var safeBuffer = require('safe-buffer')
 var randombytes = require('randombytes')
+var process = {browser: true}
 var Buffer = safeBuffer.Buffer
 var kBufferMaxLength = safeBuffer.kMaxLength
 var global = global || window
